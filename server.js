@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
 });
 
 // About page route
-app.get('/headwifsock', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'headwifsock.html'));
+app.get('/richardwifsock', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'richardwifsock.html'));
 });
 
 // Start the server
