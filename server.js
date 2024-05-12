@@ -2,22 +2,24 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 
-// Home route
+// Home page route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/public/index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// A sample route
-app.get('/hello', (req, res) => {
-  res.send('Hello World!');
+// About page route
+app.get('/headwifsock', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'headwifsock.html'));
 });
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server running on http://localhost:${port}`);
+}).on('error', (err) => {
+  console.error('Error starting server:', err);
 });

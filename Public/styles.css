@@ -16,3 +16,18 @@ header {
 a {
     color: #333;
 }
+
+.input-container {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.input-container input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+}
