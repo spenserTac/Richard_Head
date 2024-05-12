@@ -1,0 +1,15 @@
+{
+  "name": "richard_head",
+  "version": "1.0.0",
+  "description": "1. Run `sudo apt-get --fix-missing install npm`.\r 2. sudo apt --fix-broken install.\r 3. Run `npm init -y` *(to create a new `package.json` file)*.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
